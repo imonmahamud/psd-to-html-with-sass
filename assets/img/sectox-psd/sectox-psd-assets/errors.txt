@@ -1,0 +1,2 @@
+[2026-1-7 16:35:44] layer "+896 635 650 00": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2026-1-7 16:35:44] layer "+1 800 123 456 789 +1 800 987 654 321": Expected Either a default asset specification or a layer asset specification but "+" found.
