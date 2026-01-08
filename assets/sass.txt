@@ -1,0 +1,1 @@
+sass --watch C:\Users\Mohamud Hasan Emon\Desktop\psd to html with sass\assets\scss\.main.scss:C:\Users\Mohamud Hasan Emon\Desktop\psd to html with sass\assets\css\style.css

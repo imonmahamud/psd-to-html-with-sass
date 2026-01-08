@@ -96,7 +96,7 @@ h6 {
   font-family: var(--tp-ff-heading);
   color: var(--tp-heading-primary);
   margin-top: 0px;
-  font-weight: var(--tp-fw-sbold);
+  font-weight: var(--tp-fw-bold);
   line-height: 1.2;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
@@ -483,6 +483,37 @@ input[type=color] {
 }
 
 /* theme btn */
+.tp-btn-white {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--tp-common-black);
+  background: var(--tp-common-white);
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  padding: 0 38px;
+  text-transform: uppercase;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -o-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.tp-btn-white i {
+  padding-left: 5px;
+}
+.tp-btn-white:hover {
+  color: var(--tp-common-white);
+  background-color: var(--tp-common-black);
+}
+.tp-btn-white:focus {
+  color: var(--tp-common-white);
+}
+
 .tp-btn {
   display: inline-block;
   font-size: 16px;
@@ -1015,6 +1046,111 @@ input[type=color] {
   border: 1px solid #ddd;
   margin-left: 10px;
   display: inline-block;
+}
+
+/*----------------------------------------*/
+/*  00. SLIDER CSS START
+/*----------------------------------------*/
+.tp-slider-height {
+  min-height: 810px;
+}
+
+.tp-slider-item {
+  background-size: cover;
+  background-position: center;
+}
+
+.tp-slider-content span.tp-slider-subtitle {
+  color: var(--tp-common-white);
+  background: var(--tp-theme-1);
+  text-transform: uppercase;
+  padding: 4px 10px;
+  font-size: var(--tp-fw-bold);
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.tp-slider-title {
+  font-size: 70px;
+  line-height: 1.1;
+}
+
+.tp-slider-content p {
+  color: #696868;
+  font-size: 17px;
+  line-height: 28px;
+}
+
+.tp-slide-service {
+  display: flex;
+  align-items: center;
+}
+.tp-slide-service h4 {
+  color: var(--tp-theme-1);
+  font-size: 48px;
+  margin-bottom: 0;
+  margin-right: 10px;
+  line-height: 1;
+}
+.tp-slide-service span {
+  font-size: 14px;
+  color: var(--tp-heading-primary);
+  line-height: 18px;
+}
+
+.slick-active .tp-slider-subtitle {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+
+.slick-active .tp-slider-title {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
+
+.slick-active .tp-slider-content p {
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+}
+
+.slick-active .tp-slider-btn-box {
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+  -webkit-animation-duration: 0.9s;
+  animation-duration: 0.9s;
+}
+
+.slick-active .tp-slider-subtitle, .slick-active .tp-slider-title, .slick-active .tp-slider-content p, .slick-active .tp-slider-btn-box {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.slider-active button {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: var(--tp-heading-primary);
+  border: 1px solid var(--tp-heading-primary);
+  color: var(--tp-common-white);
+  border-radius: 50%;
+  z-index: 99;
+  transform: translateY(-50%);
+}
+.slider-active button.slick-next {
+  left: auto;
+  right: 40px;
 }
 
 /*----------------------------------------*/
