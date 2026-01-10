@@ -419,6 +419,10 @@ input[type=color] {
   background: var(--tp-common-black);
 }
 
+.theme-bg {
+  background: var(--tp-theme-1);
+}
+
 /*--
     - Spacing
 -----------------------------------------*/
@@ -665,6 +669,18 @@ input[type=color] {
 .link-btn-2.link-prev:hover i:last-child {
   left: -10%;
   right: auto;
+}
+
+.tp-section-title {
+  font-size: 55px;
+  letter-spacing: -2.5px;
+}
+
+.-tp-section-sub-title {
+  text-transform: uppercase;
+  color: var(--tp-common-white);
+  background: var(--tp-theme-1);
+  padding: 3px 10px;
 }
 
 /*----------------------------------------*/
@@ -1049,111 +1065,6 @@ input[type=color] {
 }
 
 /*----------------------------------------*/
-/*  00. SLIDER CSS START
-/*----------------------------------------*/
-.tp-slider-height {
-  min-height: 810px;
-}
-
-.tp-slider-item {
-  background-size: cover;
-  background-position: center;
-}
-
-.tp-slider-content span.tp-slider-subtitle {
-  color: var(--tp-common-white);
-  background: var(--tp-theme-1);
-  text-transform: uppercase;
-  padding: 4px 10px;
-  font-size: var(--tp-fw-bold);
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
-.tp-slider-title {
-  font-size: 70px;
-  line-height: 1.1;
-}
-
-.tp-slider-content p {
-  color: #696868;
-  font-size: 17px;
-  line-height: 28px;
-}
-
-.tp-slide-service {
-  display: flex;
-  align-items: center;
-}
-.tp-slide-service h4 {
-  color: var(--tp-theme-1);
-  font-size: 48px;
-  margin-bottom: 0;
-  margin-right: 10px;
-  line-height: 1;
-}
-.tp-slide-service span {
-  font-size: 14px;
-  color: var(--tp-heading-primary);
-  line-height: 18px;
-}
-
-.slick-active .tp-slider-subtitle {
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
-}
-
-.slick-active .tp-slider-title {
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-}
-
-.slick-active .tp-slider-content p {
-  -webkit-animation-delay: 0.7s;
-  animation-delay: 0.7s;
-  -webkit-animation-duration: 0.7s;
-  animation-duration: 0.7s;
-}
-
-.slick-active .tp-slider-btn-box {
-  -webkit-animation-delay: 0.9s;
-  animation-delay: 0.9s;
-  -webkit-animation-duration: 0.9s;
-  animation-duration: 0.9s;
-}
-
-.slick-active .tp-slider-subtitle, .slick-active .tp-slider-title, .slick-active .tp-slider-content p, .slick-active .tp-slider-btn-box {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-.slider-active button {
-  position: absolute;
-  left: 40px;
-  top: 50%;
-  height: 50px;
-  width: 50px;
-  line-height: 50px;
-  text-align: center;
-  background: var(--tp-heading-primary);
-  border: 1px solid var(--tp-heading-primary);
-  color: var(--tp-common-white);
-  border-radius: 50%;
-  z-index: 99;
-  transform: translateY(-50%);
-}
-.slider-active button.slick-next {
-  left: auto;
-  right: 40px;
-}
-
-/*----------------------------------------*/
 /*  03. MEAN MENU CSS START
 /*----------------------------------------*/
 /* mean menu customize */
@@ -1239,6 +1150,220 @@ input[type=color] {
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   color: var(--clr-common-black);
+}
+
+/*----------------------------------------*/
+/*  00. SLIDER CSS START
+/*----------------------------------------*/
+.tp-slider-height {
+  min-height: 810px;
+}
+
+.tp-slider-item {
+  background-size: cover;
+  background-position: center;
+}
+
+.tp-slider-content span.tp-slider-subtitle {
+  color: var(--tp-common-white);
+  background: var(--tp-theme-1);
+  text-transform: uppercase;
+  padding: 4px 10px;
+  font-size: var(--tp-fw-bold);
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.tp-slider-title {
+  font-size: 70px;
+  line-height: 1.1;
+  letter-spacing: -2.5px;
+}
+
+.tp-slider-content p {
+  color: #696868;
+  font-size: 17px;
+  line-height: 28px;
+}
+
+.tp-slide-service {
+  display: flex;
+  align-items: center;
+}
+.tp-slide-service h4 {
+  color: var(--tp-theme-1);
+  font-size: 48px;
+  margin-bottom: 0;
+  margin-right: 10px;
+  line-height: 1;
+}
+.tp-slide-service span {
+  font-size: 14px;
+  color: var(--tp-heading-primary);
+  line-height: 18px;
+}
+
+.slick-active .tp-slider-subtitle {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+
+.slick-active .tp-slider-title {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
+
+.slick-active .tp-slider-content p {
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+}
+
+.slick-active .tp-slider-btn-box {
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+  -webkit-animation-duration: 0.9s;
+  animation-duration: 0.9s;
+}
+
+.slick-active .tp-slider-subtitle, .slick-active .tp-slider-title, .slick-active .tp-slider-content p, .slick-active .tp-slider-btn-box {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.slider-active button {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: var(--tp-heading-primary);
+  border: 1px solid var(--tp-heading-primary);
+  color: var(--tp-common-white);
+  border-radius: 50%;
+  z-index: 99;
+  transform: translateY(-50%);
+}
+.slider-active button.slick-next {
+  left: auto;
+  right: 40px;
+}
+
+/*----------------------------------------*/
+/*  02. ABOUT CSS START
+/*----------------------------------------*/
+.counter-row {
+  counter-reset: count;
+}
+
+.tp-fact {
+  display: flex;
+  align-items: start;
+}
+.tp-fact .fact-number {
+  display: inline-block;
+  text-align: center;
+}
+.tp-fact .fact-number h2 {
+  font-size: 55px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  margin-bottom: 0;
+  line-height: 1;
+}
+.tp-fact .fact-number span {
+  color: #212121;
+  font-size: 15px;
+  font-weight: 700;
+  background: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  transform: translateY(-20px);
+}
+.tp-fact .fact-content {
+  margin-left: 15px;
+  z-index: 2;
+}
+.tp-fact .fact-content h4 {
+  font-size: 20px;
+  color: #fff;
+}
+.tp-fact .fact-content p {
+  color: #fff;
+}
+.tp-fact .num__count {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+.tp-fact .num__count:before {
+  color: #448ca0;
+  counter-increment: count;
+  content: "0" counter(count);
+  font-size: 100px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+/*----------------------------------------*/
+/*  02. ABOUT CSS START
+/*----------------------------------------*/
+.about-thumb:after {
+  position: absolute;
+  top: 17%;
+  right: 0;
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: var(--tp-theme-1);
+  z-index: 99;
+}
+.about-thumb .ab-sm {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+img.meta-img {
+  width: 100%;
+}
+
+.ab-meta-text h4 {
+  font-size: 19px;
+  color: var(--tp-common-black);
+  font-weight: var(--tp-fw-regular);
+}
+.ab-meta-text span {
+  font-weight: var(--tp-fw-bold);
+  color: var(--tp-common-black);
+}
+.ab-meta-text span i {
+  color: var(--tp-theme-1);
+  font-style: normal;
+  font-weight: var(--tp-fw-regular);
+}
+
+.section-large-text {
+  font-size: 160px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px #f1f1f1;
+  position: absolute;
+  left: -13px;
+  top: -75px;
+  z-index: -1;
 }
 
 /*----------------------------------------*/

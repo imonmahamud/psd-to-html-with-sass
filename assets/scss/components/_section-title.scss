@@ -1,0 +1,12 @@
+@use '../utils' as *;
+
+.tp-section-title {
+  font-size: 55px;
+  letter-spacing: -2.5px;
+}
+.-tp-section-sub-title {
+  text-transform: uppercase;
+  color: var(--tp-common-white);
+  background: var(--tp-theme-1);
+  padding: 3px 10px;
+}

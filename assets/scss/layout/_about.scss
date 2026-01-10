@@ -1,0 +1,58 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  02. ABOUT CSS START
+/*----------------------------------------*/
+.about-thumb {
+    &:after {
+        position: absolute;
+        top: 17%;
+        right: 0;
+        content: "";
+        height: 20px;
+        width: 20px;
+        background: var(--tp-theme-1);
+        z-index: 99;
+    }
+
+    & .ab-sm {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+img {
+    &.meta-img {
+        width: 100%;
+    }
+}
+
+.ab-meta-text {
+    & h4 {
+        font-size: 19px;
+        color: var(--tp-common-black);
+        font-weight: var(--tp-fw-regular);
+    }
+
+    & span 
+    {
+        font-weight: var(--tp-fw-bold);
+        color:var(--tp-common-black);
+        & i {
+            color: var(--tp-theme-1);
+            font-style: normal;
+            font-weight: var(--tp-fw-regular);
+        }
+    }
+}
+
+.section-large-text {
+    font-size: 160px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #f1f1f1;
+    position: absolute;
+    left: -13px;
+    top: -75px;
+    z-index: -1;
+}

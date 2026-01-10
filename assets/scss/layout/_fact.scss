@@ -1,0 +1,61 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  02. ABOUT CSS START
+/*----------------------------------------*/
+.counter-row{
+    counter-reset: count;
+}
+.tp-fact {
+  display: flex;
+  align-items: start;
+  & .fact-number {
+  display: inline-block;
+  text-align: center;
+  & h2 {
+	font-size: 55px;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 1px #fff;
+	margin-bottom: 0;
+	line-height: 1;
+}
+& span {
+	color: #212121;
+	font-size: 15px;
+	font-weight: 700;
+	background: #fff;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 50%;
+	transform: translateY(-20px);
+}
+}
+& .fact-content {
+  margin-left: 15px;
+  z-index: 2;
+  & h4 {
+  font-size: 20px;
+  color: #fff;
+}
+& p {
+  color: #fff;
+}
+}
+& .num__count {
+	position: absolute;
+	right: 0;
+	z-index: 1;
+    &:before{
+    color: #448ca0;
+    counter-increment: count;
+    content:'0' counter(count);
+    font-size: 100px;
+    font-weight: 700;
+    display: inline-block;
+}
+}
+
+}
