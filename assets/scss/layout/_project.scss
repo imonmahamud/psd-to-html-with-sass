@@ -1,0 +1,36 @@
+@use '../utils' as *;
+
+.slider-space {
+    .slick-slide>div {
+        padding: 0 15px;
+    }
+}
+
+.project-item {
+    position: relative;
+
+    & a {
+        position: absolute;
+        font-size: 20px;
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        color: var(--tp-theme-1);
+        background: var(--tp-common-white);
+        top: 50px;
+        left: 50px;
+        text-align: center;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+}
+
+.slick-center {
+    .project-item {
+        & a {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}

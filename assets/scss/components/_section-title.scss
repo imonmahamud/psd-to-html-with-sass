@@ -3,10 +3,37 @@
 .tp-section-title {
   font-size: 55px;
   letter-spacing: -2.5px;
+
+  &.color-white {
+    color: var(--tp-common-white);
+  }
 }
+
 .-tp-section-sub-title {
   text-transform: uppercase;
   color: var(--tp-common-white);
   background: var(--tp-theme-1);
   padding: 3px 10px;
+}
+
+.section-large-text {
+  font-size: 160px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px #f1f1f1;
+  position: absolute;
+  left: -13px;
+  top: -75px;
+  z-index: -1;
+
+}
+
+.text-center {
+  & .section-large-text {
+    left: 0;
+    right: 0;
+
+    &.color-black {
+      -webkit-text-stroke: 2px #272727;
+    }
+  }
 }

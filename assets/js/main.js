@@ -174,6 +174,39 @@
 		]
 	});
 
+	// project activation
+
+$('.tp-project-active').slick({
+  centerMode: true,
+  arrows: false,
+  centerPadding: '350px',
+  slidesToShow: 1,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+
+
+
+
+
 	////////////////////////////////////////////////////
 	// 08. slider__active Slider Js
 	if (jQuery(".slider__active").length > 0) {
