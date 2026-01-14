@@ -1,0 +1,76 @@
+@use '../utils' as *;
+
+.counter-row{
+    counter-reset: count;
+}
+.tp-cta {
+	background-size: cover;
+	background-position: center;
+    position: relative;
+    &:before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	background: #000;
+	width: 100%;
+	height: 100%;
+	opacity: .7;
+}
+.num__count {
+	
+&:before {
+	-webkit-text-fill-color: transparent;
+	counter-increment: count;
+	content: "0" counter(count);
+	font-size: 160px;
+	font-weight: 700;
+	display: inline-block;
+	top: 50%;
+	position: absolute;
+	right: 0;
+	-webkit-text-stroke: 1px #0e0e0e;
+	left: 0;
+}
+}
+}
+.tp-cta-space {
+	padding-top: 200px;
+	padding-bottom: 60px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.tp-cta{
+    span{
+        color: #fff;
+        opacity: .5;
+        margin-bottom: 15px;
+        display: block;
+        position: relative;
+    }
+
+}
+.cta-title {
+	color: #fff;
+	font-size: 36px;
+	line-height: 50px;
+    position: relative;
+}
+.cta-link a {
+	height: 60px;
+	width: 60px;
+	line-height: 60px;
+	color: #fff;
+	border: 1px solid #ccc;
+	display: inline-block;
+	font-size: 30px;
+	border-radius: 30px;
+	text-align: center;
+    position: relative;
+    transition: .3s;
+    &:hover{
+        background: var(--tp-theme-1);
+        border: 1px solid transparent;
+    }
+}
+

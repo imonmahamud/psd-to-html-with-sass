@@ -174,6 +174,8 @@
 		]
 	});
 
+
+
 	// project activation
 
 $('.tp-project-active').slick({
@@ -204,8 +206,48 @@ $('.tp-project-active').slick({
 });
 
 
-
-
+//testimonial activation here
+$('.testimonial-active').slick({
+  arrows: false,
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+//brand activation here
+$('.tp-brand-active').slick({
+  arrows: false,
+  slidesToShow: 5,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        slidesToShow: 1
+      }
+    }
+  ]
+});
 
 	////////////////////////////////////////////////////
 	// 08. slider__active Slider Js
