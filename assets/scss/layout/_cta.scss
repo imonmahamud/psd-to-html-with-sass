@@ -55,6 +55,10 @@
 	font-size: 36px;
 	line-height: 50px;
     position: relative;
+	@media #{$xs}{
+		font-size: 20px;
+		line-height: 25px;
+	}
 }
 .cta-link a {
 	height: 60px;

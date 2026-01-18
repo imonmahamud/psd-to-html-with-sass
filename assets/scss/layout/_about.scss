@@ -13,6 +13,9 @@
         width: 20px;
         background: var(--tp-theme-1);
         z-index: 99;
+        @media #{$md}{
+            right: auto
+        }
     }
 
     & .ab-sm {
@@ -21,7 +24,14 @@
         left: 0;
     }
 }
-
+.ab-lg {
+    @media #{$lg} {
+    margin-left: 20px;
+  }
+    @media #{$xs} {
+    margin-left: 0px;
+  }
+}
 img {
     &.meta-img {
         width: 100%;

@@ -6,6 +6,7 @@
 .tp-slider-height {
 	min-height: 810px;
 }
+
 .tp-slider-item {
 	background-size: cover;
 	background-position: center;
@@ -25,84 +26,115 @@
 
 	}
 }
+
 .tp-slider-title {
 	font-size: 70px;
 	line-height: 1.1;
 	letter-spacing: -2.5px;
+	@media #{$xs}{
+		font-size: 40px;
+	}
 }
+
 .tp-slider-content {
 	& p {
-	color: #696868;
-	font-size: 17px;
-	line-height: 28px;
+		color: #696868;
+		font-size: 17px;
+		line-height: 28px;
+	}
 }
-}
+
 .tp-slide-service {
 	display: flex;
 	align-items: center;
+
 	& h4 {
-	color: var(--tp-theme-1);
-	font-size: 48px;
-	margin-bottom: 0;
-	margin-right: 10px;
-	line-height: 1;
+		color: var(--tp-theme-1);
+		font-size: 48px;
+		margin-bottom: 0;
+		margin-right: 10px;
+		line-height: 1;
 	}
-	& span{
+
+	& span {
 		font-size: 14px;
-		color:var(--tp-heading-primary);
+		color: var(--tp-heading-primary);
 		line-height: 18px;
 	}
 }
 
-.slick-active .tp-slider-subtitle{
+.slick-active .tp-slider-subtitle {
 	-webkit-animation-delay: 0.3s;
 	animation-delay: .3s;
 	-webkit-animation-duration: .3s;
 	animation-duration: .3s;
 }
-.slick-active .tp-slider-title{
+
+.slick-active .tp-slider-title {
 	-webkit-animation-delay: 0.5s;
 	animation-delay: .5s;
 	-webkit-animation-duration: .5s;
 	animation-duration: .5s;
 }
-.slick-active .tp-slider-content p{
-    -webkit-animation-delay: 0.7s;
+
+.slick-active .tp-slider-content p {
+	-webkit-animation-delay: 0.7s;
 	animation-delay: .7s;
 	-webkit-animation-duration: .7s;
 	animation-duration: .7s;
 }
-.slick-active .tp-slider-btn-box{
+
+.slick-active .tp-slider-btn-box {
 	-webkit-animation-delay: 0.9s;
 	animation-delay: .9s;
 	-webkit-animation-duration: .9s;
 	animation-duration: .9s;
 }
 
-.slick-active .tp-slider-subtitle, .slick-active .tp-slider-title, .slick-active .tp-slider-content p, .slick-active .tp-slider-btn-box{
--webkit-animation-name:fadeInUp;
-animation-name: fadeInUp;
--webkit-animation-fill-mode: both;
-animation-fill-mode: both;
+.slick-active .tp-slider-subtitle,
+.slick-active .tp-slider-title,
+.slick-active .tp-slider-content p,
+.slick-active .tp-slider-btn-box {
+	-webkit-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
 }
+
 .slider-active {
 	& button {
-	position: absolute;
-	left: 40px;
-	top: 50%;
-	height: 50px;
-	width: 50px;
-	line-height: 50px;
-	text-align: center;
-	background: var(--tp-heading-primary);
-	border: 1px solid var(--tp-heading-primary);
-	color:var(--tp-common-white);
-	border-radius: 50%;
-	z-index: 99;
-	transform: translateY(-50%);
-	&.slick-next{
-		left: auto;
-		right: 40px;
+		position: absolute;
+		left: 40px;
+		top: 50%;
+		height: 50px;
+		width: 50px;
+		line-height: 50px;
+		text-align: center;
+		background: var(--tp-heading-primary);
+		border: 1px solid var(--tp-heading-primary);
+		color: var(--tp-common-white);
+		border-radius: 50%;
+		z-index: 99;
+		transform: translateY(-50%);
+
+		@media #{$lg} {
+			left: 40px;
+			top: auto;
+			bottom: 20px;
+		}
+		
+
+		&.slick-next {
+			left: auto;
+			right: 40px;
+
+			@media #{$lg} {
+				left: 100px;
+				right: auto;
+			}
+		}
+		@media #{$md,$xs} {
+				display: none !important;
+			}
 	}
-}
 }

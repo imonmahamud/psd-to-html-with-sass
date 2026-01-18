@@ -9,6 +9,10 @@
 .project-item {
     position: relative;
 
+    & img{
+        width: 100%;
+    }
+
     & a {
         position: absolute;
         font-size: 20px;

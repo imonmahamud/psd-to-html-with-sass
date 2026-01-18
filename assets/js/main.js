@@ -30,21 +30,24 @@
 	// 02. Mobile Menu Js
 	$('#mobile-menu').meanmenu({
 		meanMenuContainer: '.mobile-menu',
-		meanScreenWidth: "991",
+		meanScreenWidth: "1199",
 		meanExpand: ['<i class="fal fa-plus"></i>'],
 	});
 
 	////////////////////////////////////////////////////
 	// 03. Sidebar Js
-	$(".offcanvas-toggle-btn").on("click", function () {
-		$(".offcanvas__area").addClass("opened");
+	$(".tp-menu-toggle").on("click", function () {
+		$(".tp-sidebar-menu").addClass("sidebar-opened");
 		$(".body-overlay").addClass("opened");
 	});
-	$(".offcanvas__close-btn").on("click", function () {
-		$(".offcanvas__area").removeClass("opened");
+	$(".sidebar-close").on("click", function () {
+		$(".tp-sidebar-menu").removeClass("sidebar-opened");
 		$(".body-overlay").removeClass("opened");
 	});
-
+		$(".body-overlay").on("click", function () {
+		$(".tp-sidebar-menu").removeClass("sidebar-opened");
+		$(".body-overlay").removeClass("opened");
+	});
 
 	////////////////////////////////////////////////////
 	// 04. Body overlay Js
@@ -107,7 +110,7 @@
 			doAnimations($animatingElements);
 		});
 		BasicSlider.slick({
-			autoplay: true,
+			autoplay: false,
 			autoplaySpeed: 4000,
 			dots: false,
 			fade: true,
@@ -185,11 +188,11 @@ $('.tp-project-active').slick({
   slidesToShow: 1,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 992,
       settings: {
         arrows: false,
         centerMode: true,
-        centerPadding: '40px',
+        centerPadding: '80px',
         slidesToShow: 1
       }
     },
@@ -198,7 +201,7 @@ $('.tp-project-active').slick({
       settings: {
         arrows: false,
         centerMode: true,
-        centerPadding: '40px',
+        centerPadding: '0px',
         slidesToShow: 1
       }
     }
@@ -212,10 +215,10 @@ $('.testimonial-active').slick({
   slidesToShow: 3,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 992,
       settings: {
         arrows: false,
-        slidesToShow: 1
+        slidesToShow: 2
       }
     },
     {
@@ -233,7 +236,7 @@ $('.tp-brand-active').slick({
   slidesToShow: 5,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 992,
       settings: {
         arrows: false,
         slidesToShow: 3
@@ -243,7 +246,7 @@ $('.tp-brand-active').slick({
       breakpoint: 480,
       settings: {
         arrows: false,
-        slidesToShow: 1
+        slidesToShow: 2
       }
     }
   ]

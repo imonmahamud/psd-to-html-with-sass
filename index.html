@@ -65,14 +65,14 @@
       <div class="header-area">
          <div class="container-fluid">
             <div class="row align-items-center">
-               <div class="col-xl-3">
+               <div class="col-xl-3 col-lg-6 col-md-5 col-8">
                   <div class="logo">
                      <a href="index.html"><img src="assets/img/logo/logo.png" alt="logo"></a>
                   </div>
                </div>
-               <div class="col-xl-6">
+               <div class="col-xl-6 d-none d-xl-block">
                   <div class="tp-main-menu text-center">
-                     <nav>
+                     <nav id="mobile-menu">
                         <ul>
                            <li class="has-dropdown"><a href="#">Home</a>
                               <ul class="submenu">
@@ -92,11 +92,12 @@
                      </nav>
                   </div>
                </div>
-               <div class="col-xl-3">
+               <div class="col-xl-3 col-lg-6 col-md-7 col-4">
                   <div class="header-right">
                      <a class="tp-header-icon" href="#"><i class="fa-light fa-magnifying-glass-location"></i></a>
-                     <a class="tp-header-icon" href="#"><i class="fa-light fa-cart-circle-exclamation"></i></a>
-                     <a href="#" class="tp-btn ml-10">Get In Touch</a>
+                     <a class="tp-header-icon d-none d-xl-inline-block" href="#"><i class="fa-light fa-cart-circle-exclamation"></i></a>
+                     <a href="#" class="tp-btn ml-10 d-none d-md-block">Get In Touch</a>
+                     <a href="#" class="tp-menu-toggle ml-10 d-xl-none"><i class="far fa-bars"></i></a>
                   </div>
                </div>
             </div>
@@ -104,6 +105,17 @@
       </div>
    </header>
    <!-- header end -->
+   <div class="tp-sidebar-menu">
+      <button class="sidebar-close"><i class="far fa-times"></i></button>
+      <div class="sidebar-logo">
+         <a href="index.html"><img src="assets/img/logo/logo.png" alt="logo"></a>
+      </div>
+      <div class="mobile-menu"></div>
+   </div>
+   <div class="body-overlay"></div>
+
+
+
    <!-- slider area start here -->
    <div class="slider-area">
       <div class="slider-active">
@@ -111,14 +123,14 @@
             data-background="assets/img/slider/slide1.jpg">
             <div class="container">
                <div class="row">
-                  <div class="col-xl-6">
+                  <div class="col-xl-6 col-lg-8">
                      <div class="tp-slider-content">
                         <span class="tp-slider-subtitle">Solid solution for your home & office</span>
                         <h2 class="tp-slider-title">CCTV & Security
                            Solution</h2>
                         <p>Teaching of the great explorer of the truth, the master-builder of
                            human happiness. No one rejects, dislikes</p>
-                        <div class="tp-slider-btn-box d-flex">
+                        <div class="tp-slider-btn-box d-block d-md-flex">
                            <div class="tp-slide-service mr-15">
                               <h4>100%</h4>
                               <span><b>Installation</b> <br> Free Service</span>
@@ -143,7 +155,7 @@
                            Solution</h2>
                         <p>Teaching of the great explorer of the truth, the master-builder of
                            human happiness. No one rejects, dislikes</p>
-                        <div class="tp-slider-btn-box d-flex">
+                        <div class="tp-slider-btn-box d-block d-md-flex">
                            <div class="tp-slide-service mr-15">
                               <h4>100%</h4>
                               <span><b>Installation</b> <br> Free Service</span>
@@ -161,17 +173,17 @@
    </div>
    <!-- slider area end here -->
    <!-- about area start here -->
-   <div class="tp-about-area pt-120 pb-120">
+   <div class="tp-about-area pt-120 pb-90">
       <div class="container">
          <div class="row">
-            <div class="col-xl-6">
-               <div class="about-thumb position-relative pt-60">
+            <div class="col-xl-6 col-lg-6">
+               <div class="about-thumb position-relative pt-60 mb-30">
                   <img class="ab-sm" src="assets/img/about-us/ab-small.webp" alt="">
                   <img class="ab-lg ml-80" src="assets/img/about-us/ab-large.webp" alt="">
                </div>
             </div>
-            <div class="col-xl-6">
-               <div class="tp-about-wrapper pl-30 position-relative mt-60">
+            <div class="col-xl-6 col-lg-6">
+               <div class="tp-about-wrapper pl-30 position-relative mt-60 mb-30">
                   <div class="tp-section-box">
                      <h2 class="section-large-text">About</h2>
                      <span class="-tp-section-sub-title d-inline-block mb-10">About us</span>
@@ -186,10 +198,10 @@
                   <hr class="mt-30 mb-30">
                   <div class="ab-meta">
                      <div class="row">
-                        <div class="col-lg-3">
+                        <div class="col-xl-3 col-lg-4 col-md-4">
                            <img class="meta-img" src="assets/img/about-us/ab-meta.webp" alt="">
                         </div>
-                        <div class="col-lg-9">
+                        <div class="col-xl-9 col-lg-8 col-md-8">
                            <div class="ab-meta-text">
                               <h4>In 2014 only 3 countries host 50% of the
                                  globally installed bandwidth potential.</h4>
@@ -208,7 +220,7 @@
    <div class="tp-fact-area theme-bg pt-70 pb-40">
       <div class="container">
          <div class="row counter-row">
-            <div class="col-lg-3">
+            <div class="col-xl-3 col-md-6">
                <div class="tp-fact mb-10 position-relative">
                   <div class="num__count"></div>
                   <div class="fact-number">
@@ -222,7 +234,7 @@
                   </div>
                </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-xl-3 col-md-6">
                <div class="tp-fact mb-10 position-relative">
                   <div class="num__count"></div>
                   <div class="fact-number">
@@ -236,7 +248,7 @@
                   </div>
                </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-xl-3 col-md-6">
                <div class="tp-fact mb-10 position-relative">
                   <div class="num__count"></div>
                   <div class="fact-number">
@@ -250,7 +262,7 @@
                   </div>
                </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-xl-3 col-md-6">
                <div class="tp-fact mb-10 position-relative">
                   <div class="num__count"></div>
                   <div class="fact-number">
@@ -345,23 +357,23 @@
    <div class="project-area">
       <div class="tp-project-active slider-space">
          <div class="project-item">
-            <img src="assets/img/project/project1.webp" class="w-100" alt="">
+            <img src="assets/img/project/project1.webp" alt="">
             <a class="popup-image" href="assets/img/project/project2.webp"><i class="fal fa-plus"></i> </a>
          </div>
          <div class="project-item">
-            <img src="assets/img/project/project2.webp" class="w-100" alt="">
+            <img src="assets/img/project/project2.webp" alt="">
             <a class="popup-image" href="assets/img/project/project1.webp"><i class="fal fa-plus"></i> </a>
          </div>
          <div class="project-item">
-            <img src="assets/img/project/project1.webp" class="w-100" alt="">
+            <img src="assets/img/project/project1.webp"  alt="">
             <a class="popup-image" href="assets/img/project/project2.webp"><i class="fal fa-plus"></i> </a>
          </div>
          <div class="project-item">
-            <img src="assets/img/project/project2.webp" class="w-100" alt=""><a class="popup-image"
+            <img src="assets/img/project/project2.webp"  alt=""><a class="popup-image"
                href="assets/img/project/project1.webp"><i class="fal fa-plus"></i> </a>
          </div>
          <div class="project-item">
-            <img src="assets/img/project/project1.webp" class="w-100" alt=""><a class="popup-image"
+            <img src="assets/img/project/project1.webp"  alt=""><a class="popup-image"
                href="assets/img/project/project2.webp"><i class="fal fa-plus"></i> </a>
          </div>
       </div>
@@ -644,25 +656,25 @@
             <h1 class="happy-user">Happy Users</h1>
          </div>
          <div class="tp-brand-active">
-            <div class="tp-single-brand mb-30">
+            <div class="tp-single-brand mb-30 text-center d-md-text-left">
                <a href="#"> <img src="assets/img/brand/brand1.png" alt=""> </a>
             </div>
-            <div class="tp-single-brand mb-30">
+            <div class="tp-single-brand mb-30 text-center d-md-text-left">
                <a href="#"> <img src="assets/img/brand/brand2.png" alt=""> </a>
             </div>
-            <div class="tp-single-brand mb-30">
+            <div class="tp-single-brand mb-30 text-center d-md-text-left">
                <a href="#"> <img src="assets/img/brand/brand3.png" alt=""> </a>
             </div>
-            <div class="tp-single-brand mb-30">
+            <div class="tp-single-brand mb-30 text-center d-md-text-left">
                <a href="#"> <img src="assets/img/brand/brand4.png" alt=""> </a>
             </div>
-            <div class="tp-single-brand mb-30">
+            <div class="tp-single-brand mb-30 text-center d-md-text-left">
                <a href="#"> <img src="assets/img/brand/brand5.png" alt=""> </a>
             </div>
-            <div class="tp-single-brand mb-30">
+            <div class="tp-single-brand mb-30 text-center d-md-text-left">
                <a href="#"> <img src="assets/img/brand/brand3.png" alt=""> </a>
             </div>
-            <div class="tp-single-brand mb-30">
+            <div class="tp-single-brand mb-30 text-center d-md-text-left">
                <a href="#"> <img src="assets/img/brand/brand4.png" alt=""> </a>
             </div>
          </div>
@@ -714,90 +726,90 @@
             </div>
          </div>
          <div class="row">
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-lg-4">
                <div class="tp-blog-item mb-30">
                   <div class="fix">
                      <div class="tp-blog-img">
-                     <a href="#"> <img class="w-100" src="assets/img/blog/blog1.webp" alt=""></a>
-                     <a href="#">
-                        <div class="tp-blog-meta">
-                           <h3 class="meta-date">15</h3>
-                           <p class="tp-meta-month">July</p>
+                        <a href="#"> <img class="w-100" src="assets/img/blog/blog1.webp" alt=""></a>
+                        <a href="#">
+                           <div class="tp-blog-meta">
+                              <h3 class="meta-date">15</h3>
+                              <p class="tp-meta-month">July</p>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="tp-blog-content mt-30">
+                        <div class="tp-latest-blog-meta">
+                           <span>BY</span>
+                           <a href="#">ADMIN</a>
+                           <a href="#">- Clear-lens</a>
                         </div>
-                     </a>
-                  </div>
-                  <div class="tp-blog-content mt-30">
-                     <div class="tp-latest-blog-meta">
-                        <span>BY</span>
-                        <a href="#">ADMIN</a>
-                        <a href="#">- Clear-lens</a>
+                        <h5 class="tp-latest-title">
+                           <a href="#">A CCTV business name is one of the
+                              most important decisions</a>
+                        </h5>
+                        <div class="tp-feed-link">
+                           <a href="#">Read More<i class="fal fa-long-arrow-right"></i></a>
+                        </div>
                      </div>
-                     <h5 class="tp-latest-title">
-                        <a href="#">A CCTV business name is one of the
-                           most important decisions</a>
-                     </h5>
-                     <div class="tp-feed-link">
-                        <a href="#">Read More<i class="fal fa-long-arrow-right"></i></a>
-                     </div>
-                  </div>
                   </div>
                </div>
             </div>
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-lg-4">
                <div class="tp-blog-item mb-30">
                   <div class="fix">
                      <div class="tp-blog-img">
-                     <a href="#"> <img class="w-100" src="assets/img/blog/blog1.webp" alt=""></a>
-                     <a href="#">
-                        <div class="tp-blog-meta">
-                           <h3 class="meta-date">15</h3>
-                           <p class="tp-meta-month">July</p>
+                        <a href="#"> <img class="w-100" src="assets/img/blog/blog1.webp" alt=""></a>
+                        <a href="#">
+                           <div class="tp-blog-meta">
+                              <h3 class="meta-date">15</h3>
+                              <p class="tp-meta-month">July</p>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="tp-blog-content mt-30">
+                        <div class="tp-latest-blog-meta">
+                           <span>BY</span>
+                           <a href="#">ADMIN</a>
+                           <a href="#">- Clear-lens</a>
                         </div>
-                     </a>
-                  </div>
-                  <div class="tp-blog-content mt-30">
-                     <div class="tp-latest-blog-meta">
-                        <span>BY</span>
-                        <a href="#">ADMIN</a>
-                        <a href="#">- Clear-lens</a>
+                        <h5 class="tp-latest-title">
+                           <a href="#">A CCTV business name is one of the
+                              most important decisions</a>
+                        </h5>
+                        <div class="tp-feed-link">
+                           <a href="#">Read More<i class="fal fa-long-arrow-right"></i></a>
+                        </div>
                      </div>
-                     <h5 class="tp-latest-title">
-                        <a href="#">A CCTV business name is one of the
-                           most important decisions</a>
-                     </h5>
-                     <div class="tp-feed-link">
-                        <a href="#">Read More<i class="fal fa-long-arrow-right"></i></a>
-                     </div>
-                  </div>
                   </div>
                </div>
             </div>
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-lg-4">
                <div class="tp-blog-item mb-30">
                   <div class="fix">
                      <div class="tp-blog-img">
-                     <a href="#"> <img class="w-100" src="assets/img/blog/blog1.webp" alt=""></a>
-                     <a href="#">
-                        <div class="tp-blog-meta">
-                           <h3 class="meta-date">15</h3>
-                           <p class="tp-meta-month">July</p>
+                        <a href="#"> <img class="w-100" src="assets/img/blog/blog1.webp" alt=""></a>
+                        <a href="#">
+                           <div class="tp-blog-meta">
+                              <h3 class="meta-date">15</h3>
+                              <p class="tp-meta-month">July</p>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="tp-blog-content mt-30">
+                        <div class="tp-latest-blog-meta">
+                           <span>BY</span>
+                           <a href="#">ADMIN</a>
+                           <a href="#">- Clear-lens</a>
                         </div>
-                     </a>
-                  </div>
-                  <div class="tp-blog-content mt-30">
-                     <div class="tp-latest-blog-meta">
-                        <span>BY</span>
-                        <a href="#">ADMIN</a>
-                        <a href="#">- Clear-lens</a>
+                        <h5 class="tp-latest-title">
+                           <a href="#">A CCTV business name is one of the
+                              most important decisions</a>
+                        </h5>
+                        <div class="tp-feed-link">
+                           <a href="#">Read More<i class="fal fa-long-arrow-right"></i></a>
+                        </div>
                      </div>
-                     <h5 class="tp-latest-title">
-                        <a href="#">A CCTV business name is one of the
-                           most important decisions</a>
-                     </h5>
-                     <div class="tp-feed-link">
-                        <a href="#">Read More<i class="fal fa-long-arrow-right"></i></a>
-                     </div>
-                  </div>
                   </div>
                </div>
             </div>
@@ -810,7 +822,7 @@
       <div class="footer-widget-area black-bg pt-100 pb-50">
          <div class="container">
             <div class="row">
-               <div class="col-lg-3">
+               <div class="col-lg-3 col-md-6">
                   <div class="footer-widget footer-col-1 mb-50">
                      <h3 class="footer-widget-title">About Us</h3>
                      <p>A tradaitional CCTV system comprises:
@@ -819,7 +831,7 @@
                         image sensor.</p>
                   </div>
                </div>
-               <div class="col-lg-3">
+               <div class="col-lg-3 col-md-6">
                   <div class="footer-widget footer-col-2 mb-50">
                      <h3 class="footer-widget-title">Get In Touch</h3>
                      <div class="footer-widget-contact">
@@ -838,7 +850,7 @@
                      </div>
                   </div>
                </div>
-               <div class="col-lg-3">
+               <div class="col-lg-3 col-md-6">
                   <div class="footer-widget footer-col-3 mb-50">
                      <h3 class="footer-widget-title">Main Pages</h3>
                      <ul>
@@ -854,7 +866,7 @@
                      </ul>
                   </div>
                </div>
-               <div class="col-lg-3">
+               <div class="col-lg-3 col-md-6">
                   <div class="footer-widget footer-col-4 mb-50">
                      <h3 class="footer-widget-title">Get Newsletter</h3>
                      <p>Sign up today for hints, tips & the
@@ -878,14 +890,15 @@
       </div>
       <div class="footer-copywrite-area theme-bg pt-20 pb-20">
          <div class="container">
-            <div class="row">
-               <div class="col-xl-7">
-                  <div class="copywrite-text">
+            <div class="row justify-content-center">
+               <div class="col-xl-7 col-lg-7 col-12">
+                  <div class="copywrite-text text-center text-lg-left">
                      <p>Copyright © 2022 Sectox by ThemePure. All Rights Reserved.</p>
                   </div>
                </div>
-               <div class="col-xl-5">
-                  <div class="footer-menu text-end">
+               <div class="col-xl-5 col-lg-5 col-12">
+                  <div class="footer-menu text-center
+                  text-lg-end">
                      <ul>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Terms of Use</a></li>
@@ -898,8 +911,6 @@
    </footer>
    <!-- footer end here -->
 
-
-   
 
    <!-- JS here -->
    <script src="assets/js/vendor/jquery.js"></script>
@@ -919,5 +930,4 @@
    <script src="assets/js/ajax-form.js"></script>
    <script src="assets/js/main.js"></script>
 </body>
-
 </html>

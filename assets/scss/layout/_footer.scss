@@ -14,12 +14,15 @@
     line-height: 26px;
 }
 
-.footer-widget ul li {
+.footer-widget ul {
+	overflow: hidden;
+	& li {
     margin-bottom: 10px;
     color: #aeaeae;
     list-style: none;
     width: 50%;
     float: left;
+}
 }
 
 .footer-widget ul li::before {
@@ -29,6 +32,9 @@
 }
 .footer-col-2{
     padding-left: 30px;
+	@media #{$md,$xs}{
+		padding-left: 0;
+	}
 }
 .footer-subscribe input {
 	width: 100%;
@@ -69,6 +75,9 @@
 	color: #fff;
 	font-size: 16px;
     margin: 0;
+	@media #{$md}{
+		margin-bottom: 5px;
+	}
 }
 .footer-menu ul li {
 	color: #fff;

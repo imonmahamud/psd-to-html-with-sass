@@ -6,6 +6,13 @@
   position: relative;
   z-index: 2;
 
+  @media #{$lg} {
+    font-size: 35px;
+  }
+  @media #{$xs} {
+    font-size: 35px;
+  }
+
   &.color-white {
     color: var(--tp-common-white);
   }
@@ -29,6 +36,16 @@
   top: -75px;
   z-index: -1;
 
+  @media #{$lg} {
+    font-size: 110px;
+    left: 0;
+  }
+   @media #{$xs} {
+    font-size: 90px;
+    left: 0;
+    top: -60px;
+  }
+
 }
 
 .text-center {
@@ -36,11 +53,18 @@
     left: 0;
     right: 0;
     z-index: 1;
-    &.color-gray{
+
+    &.color-gray {
       -webkit-text-stroke: 1px #777;
     }
+
     &.color-black {
       -webkit-text-stroke: 1px #272727;
     }
+    @media #{$xs} {
+    font-size: 70px;
+    left: 0;
+    top: -60px;
+  }
   }
 }
